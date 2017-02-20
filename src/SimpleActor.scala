@@ -1,5 +1,8 @@
 import akka.actor.{Props, ActorSystem, Actor}
 
+/**
+ * Simple actor
+ */
 object SimpleActor extends App {
   class Reader extends Actor {
     override def receive = {
@@ -15,4 +18,5 @@ object SimpleActor extends App {
   myActor1 ! "Sameer"
   myActor2 ! 20
   myActor2 ! "Samrah"
+  system.shutdown()
 }
