@@ -42,4 +42,6 @@ object MessagingActor extends App {
   customer ! CaffeineRequest
   customer ! FoodRequest
   barista ! CloseRequest
+
+  //system.shutdown()
 }

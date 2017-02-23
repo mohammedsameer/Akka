@@ -18,5 +18,6 @@ object SimpleActor extends App {
   myActor1 ! "Sameer"
   myActor2 ! 20
   myActor2 ! "Samrah"
-  system.shutdown()
+
+  //system.shutdown()
 }
